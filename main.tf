@@ -42,7 +42,7 @@ resource "aws_subnet" "prisub" {
 }
 
 
-resourc "aws_internet_gateway" "igw" {
+resource "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.myvpc.id
 
   tags = {
