@@ -42,11 +42,11 @@ resource "aws_subnet" "prisub" {
 }
 
 
-resource "aws_internet_gateway" "igw" {
+resourc "aws_internet_gateway" "igw" {
   vpc_id = aws_vpc.myvpc.id
 
   tags = {
-    Name = "INTERGNETGATEWAY"
+    Name = "SYDNEY-INTERGNETGATEWAY"
   }
 }
 
